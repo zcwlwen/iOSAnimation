@@ -30,6 +30,11 @@ class PositionViewController: UIViewController {
      - parameter animated: 动画
      */
     override func viewDidAppear(animated: Bool) {
+        
+        
+        
+        super.viewDidAppear(animated)
+        
         //动画执行时间 动画执行的过程｛｝一个闭包的形式
         UIView.animateWithDuration(1, animations: {
             

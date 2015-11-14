@@ -1,5 +1,5 @@
 //
-//  ScaleViewController.swift
+//  RatationViewController.swift
 //  iOSAnimation
 //
 //  Created by 张朝伟 on 15/11/14.
@@ -8,9 +8,8 @@
 
 import UIKit
 
-class ScaleViewController: UIViewController {
+class RatationViewController: UIViewController {
 
-    @IBOutlet weak var purpleSquare: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,15 +23,6 @@ class ScaleViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        UIView.animateWithDuration(1, animations: {
-            
-            
-            self.purpleSquare.transform = CGAffineTransformMakeScale(2.0, 2.0)
-            
-        })
-        
-        
     }
     /*
     // MARK: - Navigation

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2438EB481BF7022600CFCEE7 /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438EB471BF7022600CFCEE7 /* OpacityViewController.swift */; };
 		2438EB4C1BF7072B00CFCEE7 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438EB4B1BF7072B00CFCEE7 /* ScaleViewController.swift */; };
+		2438EB4E1BF7477500CFCEE7 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438EB4D1BF7477500CFCEE7 /* ColorViewController.swift */; };
+		2438EB501BF7478C00CFCEE7 /* RatationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438EB4F1BF7478C00CFCEE7 /* RatationViewController.swift */; };
 		247D810A1BF609D2006AC8CC /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247D81091BF609D2006AC8CC /* HomeTableViewController.swift */; };
 		24B823541BF5BF5300DADAB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B823531BF5BF5300DADAB6 /* AppDelegate.swift */; };
 		24B823561BF5BF5300DADAB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B823551BF5BF5300DADAB6 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		2438EB471BF7022600CFCEE7 /* OpacityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
 		2438EB4B1BF7072B00CFCEE7 /* ScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
+		2438EB4D1BF7477500CFCEE7 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorViewController.swift; path = ../ColorViewController.swift; sourceTree = "<group>"; };
+		2438EB4F1BF7478C00CFCEE7 /* RatationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatationViewController.swift; path = ../RatationViewController.swift; sourceTree = "<group>"; };
 		247D81091BF609D2006AC8CC /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		24B823501BF5BF5300DADAB6 /* iOSAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B823531BF5BF5300DADAB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 		24B823521BF5BF5300DADAB6 /* iOSAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				2438EB4F1BF7478C00CFCEE7 /* RatationViewController.swift */,
+				2438EB4D1BF7477500CFCEE7 /* ColorViewController.swift */,
 				24B823531BF5BF5300DADAB6 /* AppDelegate.swift */,
 				24B823551BF5BF5300DADAB6 /* ViewController.swift */,
 				24B823651BF5C26200DADAB6 /* PositionViewController.swift */,
@@ -148,10 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2438EB501BF7478C00CFCEE7 /* RatationViewController.swift in Sources */,
 				2438EB481BF7022600CFCEE7 /* OpacityViewController.swift in Sources */,
 				247D810A1BF609D2006AC8CC /* HomeTableViewController.swift in Sources */,
 				24B823661BF5C26200DADAB6 /* PositionViewController.swift in Sources */,
 				2438EB4C1BF7072B00CFCEE7 /* ScaleViewController.swift in Sources */,
+				2438EB4E1BF7477500CFCEE7 /* ColorViewController.swift in Sources */,
 				24B823561BF5BF5300DADAB6 /* ViewController.swift in Sources */,
 				24B823541BF5BF5300DADAB6 /* AppDelegate.swift in Sources */,
 			);
