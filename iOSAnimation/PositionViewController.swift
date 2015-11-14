@@ -18,7 +18,7 @@ class PositionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -34,24 +34,24 @@ class PositionViewController: UIViewController {
         UIView.animateWithDuration(1, animations: {
             
             //蓝色方块从左侧移动到右侧
-            self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
+            self.blueSquare.center.x  = self.view.bounds.width - self.blueSquare.center.x
 
         })
-        
-        
+
+
         UIView.animateWithDuration(1, delay: 0.5, options: [], animations: {
             //红色方块从上面移动到下面
-            self.redSquare.center.y = self.view.bounds.height - self.redSquare.center.y
-            
+            self.redSquare.center.y   = self.view.bounds.height - self.redSquare.center.y
+
 
             }, completion: nil)
-        
+
         UIView.animateWithDuration(1, delay: 1, options: [], animations: {
             //绿色方块斜线移动
             self.greenSquare.center.y = self.view.bounds.height - self.greenSquare.center.y
             self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
-            
-            
+
+
             }, completion: nil)
     }
 
