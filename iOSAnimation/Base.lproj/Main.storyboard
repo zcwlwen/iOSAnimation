@@ -105,6 +105,9 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="NtH-QP-Hvz" kind="push" id="6Td-h7-1vT"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="d9D-Ro-1RZ" style="IBUITableViewCellStyleDefault" id="v49-ge-QvM">
                                         <rect key="frame" x="0.0" y="268" width="320" height="44"/>
@@ -302,20 +305,53 @@
             </objects>
             <point key="canvasLocation" x="1134" y="-303"/>
         </scene>
-        <!--View Controller-->
+        <!--Color-->
         <scene sceneID="Omb-pX-Rkg">
             <objects>
-                <viewController id="NtH-QP-Hvz" sceneMemberID="viewController">
+                <viewController id="NtH-QP-Hvz" customClass="ColorViewController" customModule="iOSAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="igd-9u-ihA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="quc-9H-OET">
+                                <rect key="frame" x="60" y="117" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张朝伟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HwJ-NL-KPE">
+                                        <rect key="frame" x="75" y="89" width="51" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.97138869979999998" green="0.3793871942" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="9Ib-Gl-PND">
+                                <rect key="frame" x="30" y="393" width="260" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">self.purpleSquare.backgroundColor = UIColor.blueColor()                              
+self.nameText.textColor = UIColor.whiteColor()</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Color" id="jc9-yO-T4c"/>
+                    <connections>
+                        <outlet property="nameText" destination="HwJ-NL-KPE" id="4R1-ss-hRH"/>
+                        <outlet property="purpleSquare" destination="quc-9H-OET" id="hpw-16-Jf7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XX5-R3-3FC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2060" y="-303"/>
+            <point key="canvasLocation" x="2052" y="-313"/>
         </scene>
         <!--Scale-->
         <scene sceneID="bdv-IQ-vh6">
