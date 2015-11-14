@@ -10,6 +10,7 @@ import UIKit
 
 class RatationViewController: UIViewController {
 
+    @IBOutlet weak var image: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,8 +22,21 @@ class RatationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func spin () {
+        UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
+            self.image.transform = CGAffineTransformRotate(self.image.transform, CGFloat(M_PI))
+            }) { (finished) -> Void in
+                self.spin()
+        }
+    }
+
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        
+        self.spin()
+        
     }
     /*
     // MARK: - Navigation

@@ -128,6 +128,9 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="JYe-ph-MAL" kind="push" id="ppv-No-rBl"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="C0B-kn-RtH" style="IBUITableViewCellStyleDefault" id="MWf-dC-jaf">
                                         <rect key="frame" x="0.0" y="312" width="320" height="44"/>
@@ -353,6 +356,47 @@ self.nameText.textColor = UIColor.whiteColor()</string>
             </objects>
             <point key="canvasLocation" x="2052" y="-313"/>
         </scene>
+        <!--Ratation-->
+        <scene sceneID="4Cr-1j-B42">
+            <objects>
+                <viewController id="JYe-ph-MAL" customClass="RatationViewController" customModule="iOSAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FVu-zj-rpC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="120 - iPhone" id="h4Q-04-nze">
+                                <rect key="frame" x="100" y="133" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="QqU-o6-151">
+                                <rect key="frame" x="20" y="294" width="289" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">func spin () {
+        UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
+            self.image.transform = CGAffineTransformRotate(self.image.transform, CGFloat(M_PI))
+            }) { (finished) -&gt; Void in
+                self.spin()
+        }
+    }</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ratation" id="i92-DX-zHd"/>
+                    <connections>
+                        <outlet property="image" destination="h4Q-04-nze" id="aSU-Vi-ZXZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cy7-nK-5KJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2498" y="-313"/>
+        </scene>
         <!--Scale-->
         <scene sceneID="bdv-IQ-vh6">
             <objects>
@@ -408,4 +452,7 @@ self.nameText.textColor = UIColor.whiteColor()</string>
             <point key="canvasLocation" x="376" y="774"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="120 - iPhone" width="120" height="120"/>
+    </resources>
 </document>
