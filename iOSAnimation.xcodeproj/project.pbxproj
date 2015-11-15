@@ -11,6 +11,8 @@
 		2438EB4C1BF7072B00CFCEE7 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438EB4B1BF7072B00CFCEE7 /* ScaleViewController.swift */; };
 		2438EB4E1BF7477500CFCEE7 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438EB4D1BF7477500CFCEE7 /* ColorViewController.swift */; };
 		2438EB501BF7478C00CFCEE7 /* RatationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438EB4F1BF7478C00CFCEE7 /* RatationViewController.swift */; };
+		2438EB521BF758F400CFCEE7 /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438EB511BF758F400CFCEE7 /* RepeatViewController.swift */; };
+		2438EB541BF761FA00CFCEE7 /* EasingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2438EB531BF761FA00CFCEE7 /* EasingViewController.swift */; };
 		247D810A1BF609D2006AC8CC /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247D81091BF609D2006AC8CC /* HomeTableViewController.swift */; };
 		24B823541BF5BF5300DADAB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B823531BF5BF5300DADAB6 /* AppDelegate.swift */; };
 		24B823561BF5BF5300DADAB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B823551BF5BF5300DADAB6 /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 		2438EB4B1BF7072B00CFCEE7 /* ScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
 		2438EB4D1BF7477500CFCEE7 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorViewController.swift; path = ../ColorViewController.swift; sourceTree = "<group>"; };
 		2438EB4F1BF7478C00CFCEE7 /* RatationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatationViewController.swift; path = ../RatationViewController.swift; sourceTree = "<group>"; };
+		2438EB511BF758F400CFCEE7 /* RepeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
+		2438EB531BF761FA00CFCEE7 /* EasingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingViewController.swift; sourceTree = "<group>"; };
 		247D81091BF609D2006AC8CC /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		24B823501BF5BF5300DADAB6 /* iOSAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B823531BF5BF5300DADAB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,10 +75,12 @@
 				24B823531BF5BF5300DADAB6 /* AppDelegate.swift */,
 				24B823551BF5BF5300DADAB6 /* ViewController.swift */,
 				24B823651BF5C26200DADAB6 /* PositionViewController.swift */,
-				24B823571BF5BF5300DADAB6 /* Main.storyboard */,
-				2438EB471BF7022600CFCEE7 /* OpacityViewController.swift */,
 				2438EB4B1BF7072B00CFCEE7 /* ScaleViewController.swift */,
+				2438EB471BF7022600CFCEE7 /* OpacityViewController.swift */,
 				247D81091BF609D2006AC8CC /* HomeTableViewController.swift */,
+				24B823571BF5BF5300DADAB6 /* Main.storyboard */,
+				2438EB511BF758F400CFCEE7 /* RepeatViewController.swift */,
+				2438EB531BF761FA00CFCEE7 /* EasingViewController.swift */,
 				24B8235A1BF5BF5300DADAB6 /* Assets.xcassets */,
 				24B8235C1BF5BF5300DADAB6 /* LaunchScreen.storyboard */,
 				24B8235F1BF5BF5300DADAB6 /* Info.plist */,
@@ -159,7 +165,9 @@
 				247D810A1BF609D2006AC8CC /* HomeTableViewController.swift in Sources */,
 				24B823661BF5C26200DADAB6 /* PositionViewController.swift in Sources */,
 				2438EB4C1BF7072B00CFCEE7 /* ScaleViewController.swift in Sources */,
+				2438EB541BF761FA00CFCEE7 /* EasingViewController.swift in Sources */,
 				2438EB4E1BF7477500CFCEE7 /* ColorViewController.swift in Sources */,
+				2438EB521BF758F400CFCEE7 /* RepeatViewController.swift in Sources */,
 				24B823561BF5BF5300DADAB6 /* ViewController.swift in Sources */,
 				24B823541BF5BF5300DADAB6 /* AppDelegate.swift in Sources */,
 			);

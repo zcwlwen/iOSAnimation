@@ -151,6 +151,9 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="Cfj-1l-oxW" kind="push" id="cmu-Rt-0qd"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Yht-C4-FaC" style="IBUITableViewCellStyleDefault" id="Vak-n9-QNN">
                                         <rect key="frame" x="0.0" y="356" width="320" height="44"/>
@@ -171,6 +174,9 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="V28-VS-kSU" kind="push" id="7Bj-lv-Eid"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="L5F-zx-5XS" style="IBUITableViewCellStyleDefault" id="K1H-df-lbu">
                                         <rect key="frame" x="0.0" y="400" width="320" height="44"/>
@@ -206,6 +212,125 @@
             </objects>
             <point key="canvasLocation" x="975" y="774"/>
         </scene>
+        <!--Repeat View Controller-->
+        <scene sceneID="nkP-aJ-Q0r">
+            <objects>
+                <viewController id="Cfj-1l-oxW" customClass="RepeatViewController" customModule="iOSAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oAO-Cc-Sa3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="GZt-ho-Gyn">
+                                <rect key="frame" x="20" y="90" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="fS2-iC-Rjr">
+                                <rect key="frame" x="20" y="180" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.03742904276491732" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="bMp-8C-Emr">
+                                <rect key="frame" x="20" y="270" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.93441106797142837" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" id="pk0-Wh-Cwt">
+                                <rect key="frame" x="40" y="356" width="240" height="166.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">//紫色方块左到右移动  UIView.animateWithDuration(1(动画持续时间), delay: 0.5（延时）, options:[.Repeat, .Autoreverse]（动画方式详细请看文档）, animations: {（动画执行动作）
+            self.purpleSquare.center.x  = self.view.bounds.width - self.purpleSquare.center.x
+            }, completion: ni（执行完动画后执行的动作）l )</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t07-h5-Dfr"/>
+                    <connections>
+                        <outlet property="blueSquare" destination="GZt-ho-Gyn" id="bwS-tj-xp5"/>
+                        <outlet property="purpleSquare" destination="bMp-8C-Emr" id="K9G-rw-YA7"/>
+                        <outlet property="redSquare" destination="fS2-iC-Rjr" id="OFi-T3-1kb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cl8-IW-19K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1925" y="774"/>
+        </scene>
+        <!--Easing-->
+        <scene sceneID="MfP-cF-yMk">
+            <objects>
+                <viewController id="V28-VS-kSU" customClass="EasingViewController" customModule="iOSAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GyV-Fd-YPz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="l5F-zb-7A8">
+                                <rect key="frame" x="30" y="80" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="iLv-Bt-VYc">
+                                <rect key="frame" x="30" y="160" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.037429042760000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="N6d-tf-wFf">
+                                <rect key="frame" x="30" y="320" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0020686525413295964" green="1" blue="0.058249393801397154" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="fpD-l6-m1l">
+                                <rect key="frame" x="30" y="240" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.93441106799999996" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="ua8-3t-Qo4">
+                                <rect key="frame" x="40" y="411" width="240" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">//线性变换
+UIView.animateWithDuration(2, delay: 0, options:[ .Repeat, .Autoreverse], animations: {self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x}, completion: nil)
+//EaseIn变换
+UIView.animateWithDuration(2, delay: 0, options: [ .CurveEaseIn,.Repeat, .Autoreverse], animations: {self.redSquare.center.x = self.view.bounds.width - self.redSquare.center.x}, completion: nil)
+//EaseOut变换
+UIView.animateWithDuration(2, delay: 0, options: [.CurveEaseOut,.Repeat, .Autoreverse], animations: {self.purpleSquare.center.x = self.view.bounds.width - self.purpleSquare.center.x
+}, completion: nil)
+//EaseInOut变换
+UIView.animateWithDuration(2, delay: 0, options: [.CurveEaseInOut,.Repeat, .Autoreverse], animations: {self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
+}, completion: nil)
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Easing" id="FoG-xT-KmH"/>
+                    <connections>
+                        <outlet property="blueSquare" destination="l5F-zb-7A8" id="vZY-nQ-KHM"/>
+                        <outlet property="greenSquare" destination="N6d-tf-wFf" id="CPX-jg-RgW"/>
+                        <outlet property="purpleSquare" destination="fpD-l6-m1l" id="eDB-Ms-68N"/>
+                        <outlet property="redSquare" destination="iLv-Bt-VYc" id="57f-O1-NXn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qly-B4-bAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931" y="1530"/>
+        </scene>
         <!--Position-->
         <scene sceneID="I7r-Nj-d6E">
             <objects>
@@ -232,7 +357,7 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.11076081941033822" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="self.blueSquare.center.x  = self.view.bounds.width - self.blueSquare.center.x" textAlignment="natural" id="KHe-bl-uc0">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="self.blueSquare.center.x  = self.view.bounds.width - self.blueSquare.center.x" textAlignment="natural" id="KHe-bl-uc0">
                                 <rect key="frame" x="60" y="222" width="200" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -281,7 +406,7 @@
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.9512266098296478" blue="0.03147111085794807" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="KKZ-Bg-pmY">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" id="KKZ-Bg-pmY">
                                 <rect key="frame" x="0.0" y="420" width="320" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -325,14 +450,14 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.97138869979999998" green="0.3793871942" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="9Ib-Gl-PND">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" id="9Ib-Gl-PND">
                                 <rect key="frame" x="30" y="393" width="260" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -369,7 +494,7 @@ self.nameText.textColor = UIColor.whiteColor()</string>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="QqU-o6-151">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" id="QqU-o6-151">
                                 <rect key="frame" x="20" y="294" width="289" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -411,7 +536,7 @@ self.nameText.textColor = UIColor.whiteColor()</string>
                                 <animations/>
                                 <color key="backgroundColor" red="0.97138869975758912" green="0.37938719416036237" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="self.purpleSquare.transform = CGAffineTransformMakeScale(2.0, 2.0)" textAlignment="natural" id="RhG-Hz-VTZ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="self.purpleSquare.transform = CGAffineTransformMakeScale(2.0, 2.0)" textAlignment="natural" id="RhG-Hz-VTZ">
                                 <rect key="frame" x="0.0" y="425" width="320" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>

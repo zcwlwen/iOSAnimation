@@ -22,7 +22,12 @@ class RatationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    /**
+     options: UIViewAnimationOptions.CurveLinear  -  控制匀速转动 线性关系（还有很多类型可查看官方文档）
+     animations｛｝执行动画
+     后面那个闭包 是执行完动画后执行的动作
+     */
+
     func spin () {
         UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
             self.image.transform = CGAffineTransformRotate(self.image.transform, CGFloat(M_PI))

@@ -1,5 +1,5 @@
 //
-//  ScaleViewController.swift
+//  RepeatViewController.swift
 //  iOSAnimation
 //
 //  Created by 张朝伟 on 15/11/14.
@@ -8,9 +8,13 @@
 
 import UIKit
 
-class ScaleViewController: UIViewController {
+class RepeatViewController: UIViewController {
 
+    @IBOutlet weak var blueSquare: UIView!
+    @IBOutlet weak var redSquare: UIView!
     @IBOutlet weak var purpleSquare: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,18 +29,22 @@ class ScaleViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-//        UIView.animateWithDuration(1, animations: {
-//            
-//            
-//            self.purpleSquare.transform = CGAffineTransformMakeScale(2.0, 2.0)
-//            
-//        })
         
-        UIView.animateWithDuration(1.5, delay: 0, options: [.CurveEaseInOut,.Repeat, .Autoreverse], animations: {
-             self.purpleSquare.transform = CGAffineTransformMakeScale(2.0, 2.0)
-            }, completion: nil)
+        //蓝色方块左到右移动（一次）
+        UIView.animateWithDuration(1, animations: {
+             self.blueSquare.center.x  = self.view.bounds.width - self.blueSquare.center.x
+        })
         
+        //红色方块左到右移动（重复）
+        UIView.animateKeyframesWithDuration(1, delay: 0.2, options: .Repeat, animations: {
+            self.redSquare.center.x  = self.view.bounds.width - self.redSquare.center.x
+            }, completion: nil )
         
+        //紫色方块左到右移动
+        UIView.animateWithDuration(1, delay: 0.5, options:[.Repeat, .Autoreverse], animations: {
+            self.purpleSquare.center.x  = self.view.bounds.width - self.purpleSquare.center.x
+            }, completion: nil )
+      
     }
     /*
     // MARK: - Navigation
